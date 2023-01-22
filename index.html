@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Decodificador</title>
+
+</head>
+
+<body>
+    <header>
+        <img src="header.svg" class="logo" alt="Logo de Alura">
+         <!--  <img src="vector.svg" class="logo">-->
+    </header>
+    <main>
+        <section class="texto">
+            <textarea id="entrada" class="texto-entrada" required>Digite seu texto</textarea>
+            <div class="area-saida">
+                <textarea id="saida" readonly class="texto-saida"></textarea>
+                <img src="Menino.svg" class="menino" alt="Menino aguardando o texto">
+                <h2 class="no-msg">Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <input type="button" class="copiar" value="Copiar"></input>
+            </div>
+        </section>
+
+        
+
+        <section class="botoes">
+            <p class="minusculas">&excl; Apenas letras minusculas e sem acento</p>
+            <input type="button" class="criptografar" value="Criptografar"></input>
+            <input type="button" class="descriptografar" value="Descriptografar"></input>
+            
+        </section>
+    </main>
+</body>
+
+</html>

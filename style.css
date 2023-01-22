@@ -1,0 +1,151 @@
+.logo {
+    color: white;
+}
+
+body {
+    /* background: url(matrix1.jpg); */
+    background: #e5e5e5;
+    }    
+
+.texto {
+    display: inline-block;
+    padding: 20px;
+    margin: 15px;
+}
+
+.texto-entrada {
+    position: absolute;
+    height: 48px;
+    width: 680px;
+    left: 240px;
+    top: 168px;
+    border-radius: nullpx;
+    padding: 15px;
+
+}
+.area-saida {
+    display: block;
+}
+.texto-saida {
+    position: absolute;
+    height: 944px;
+    width: 400px;
+    /* left: 1000px;*/
+    right: 10px;
+    top: 40px;
+    border-radius: 32px;
+
+}
+
+.menino {
+    position: absolute;
+width: 336px;
+height: 304px;
+left: 1032px;
+top: 283px;
+}
+.no-msg {
+    width: 336px;
+    height: 58px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+    text-align: center;
+    /* Gray/gray-500 */
+
+    color: #343A40;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.minusculas {
+    position: absolute;
+    width: 228px;
+    height: 18px;
+    left: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;   /* 150%; */
+    /* identical to box height, or 18px */
+    
+    color: #FFFFFF;
+    opacity: 0.8;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0; 
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+
+}
+
+.criptografar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    /* Dark blue/dark-blue-300 */
+
+background: #a4ff4e;
+border-radius: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.descriptografar {
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+
+width: 328px;
+height: 67px;
+
+/* Light gray */
+
+background: #D8DFE8;
+/* Dark blue/dark-blue-300 */
+
+border: 1px solid #0A3871;
+border-radius: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}

@@ -1,49 +1,108 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
 .logo {
-    color: white;
-}
-
-body {
-    /* background: url(matrix1.jpg); */
-    background: #e5e5e5;
-    }    
-
-.texto {
-    display: inline-block;
+    margin-left: 20px;
     padding: 20px;
-    margin: 15px;
+    width: 25%;
 }
 
-.texto-entrada {
-    position: absolute;
+main {
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 50px;
+} 
+body {
+    background: url("images/matrix1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.textoEntrada {
+   /* position: absolute; */
     height: 48px;
     width: 680px;
     left: 240px;
     top: 168px;
-    border-radius: nullpx;
     padding: 15px;
+    border: none;
+    background: transparent;
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
 
+::placeholder {
+    color: black;
+    outline: none;
 }
+.minusculas {
+      position: absolute; 
+      width: 500px;
+      height: 18px; 
+      margin-left: 24px;
+      font-family: 'Inter';
+      /* flex: none;
+      order: 1; */
+      flex-grow: 0; 
+      margin-bottom: 20px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+      color: #FFFFFF;
+      opacity: 0.8;
+      
+      
+  }
+
 .area-saida {
-    display: block;
+   /* position: relative; */
+    color: #000000;
+    margin-top: 150px;
 }
-.texto-saida {
-    position: absolute;
-    height: 944px;
+
+.textoSaida {
+    position: fixed;
+    height: 800px;
     width: 400px;
     /* left: 1000px;*/
     right: 10px;
-    top: 40px;
+    top: 150px;
     border-radius: 32px;
+    background-image: url(images/Menino.svg);
+    background-repeat: no-repeat;
 
 }
 
 .menino {
-    position: absolute;
-width: 336px;
-height: 304px;
-left: 1032px;
-top: 283px;
+   /* position: absolute; */
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
 }
+
+.copiar {
+    background-color: #a9f4639f; 
+    box-sizing: border-box;
+    padding: 24px;
+    width: 200px;
+    right: 120px;
+    bottom: 150px;
+    height: 67px;
+    border-radius: 24px;
+    position: absolute;
+    margin-bottom: 20px; 
+    /* color: #000000; */
+}
+
+
 .no-msg {
     width: 336px;
     height: 58px;
@@ -59,93 +118,61 @@ top: 283px;
 
     color: #343A40;
     /* Inside auto layout */
-    flex: none;
+  /* flex: none; */
     order: 0;
     align-self: stretch;
     flex-grow: 0;
 }
 
-.minusculas {
-    position: absolute;
-    width: 228px;
-    height: 18px;
-    left: 24px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;   /* 150%; */
-    /* identical to box height, or 18px */
-    
-    color: #FFFFFF;
-    opacity: 0.8;
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0; 
-}
-
 .botoes {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+  /*  flex-direction: row;
+    align-items: flex-start; */
     padding: 0px;
     gap: 24px;
-    
-    position: absolute;
+    margin-bottom: 30px;
+
+    position: absolute; 
     width: 680px;
     height: 67px;
     left: 240px;
     top: 885px;
-
+    justify-content: center;
 }
 
 .criptografar {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+   /* display: flex;
+    flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 24px;
-    gap: 8px;
-    width: 328px;
+    /*  gap: 8px;  
+    width: 328px;*/
     height: 67px;
-    /* Dark blue/dark-blue-300 */
+    background: #519f089f;
+    border-radius: 24px;
 
-background: #a4ff4e;
-border-radius: 24px;
+    /* Inside auto layout */
 
-/* Inside auto layout */
+    /*  flex: none;
+    order: 0;  
+    flex-grow: 0;*/
 
-flex: none;
-order: 0;
-flex-grow: 0;
 }
+
 .descriptografar {
-    box-sizing: border-box;
-
-/* Auto layout */
-
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 24px;
-gap: 8px;
-
-width: 328px;
-height: 67px;
-
-/* Light gray */
-
-background: #D8DFE8;
-/* Dark blue/dark-blue-300 */
-
-border: 1px solid #0A3871;
-border-radius: 24px;
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
-
+  /*  display: flex;
+    align-items: center; */
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    /* width: 328px; */
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    /*   flex: none;
+    order: 1;
+    flex-grow: 0; */
 }

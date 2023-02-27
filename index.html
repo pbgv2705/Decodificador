@@ -2,37 +2,39 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"  type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Encriptador</title>
 
 </head>
 
 <body>
     <header>
-        <img class="logo" src="images/header.svg" alt="Logo da Alura">
-        <!--  <img src="vector.svg" class="logo">-->
+        <img class="logo" src="images/header.svg" alt="Logo da Alura">  
     </header>
     <main>
-        <section class="texto">
+        <div class="container">
+            <section class="texto">
 
-            <textarea id="entrada" class="textoEntrada" cols="40" rows="4" placeholder="Digite seu texto"></textarea>
-            <div>
-                <p class="minusculas">Apenas letras minúsculas e sem acento</p>
-            </div>
-            <div class="botoes">
-                <input type="button" class="criptografar" value="Criptografar" onclick="callCriptografar()"></input>
-                <input type="button" class="descriptografar" value="Descriptografar" onclick="callDescriptografar()"></input>
-            </div>
+                <textarea id="entrada" class="textoEntrada" cols="40" rows="4"
+                    placeholder="Digite seu texto"></textarea>
+                <div>
+                    <p class="minusculas">Apenas letras minúsculas e sem acento</p>
+                </div>
+                <div class="botoes">
+                    <input type="button" class="criptografar" value="Criptografar" onclick="criptografar()"></input>
+                    <input type="button" class="descriptografar" value="Descriptografar"
+                        onclick="descriptografar()"></input>
+                </div>
 
-        </section>
-        <section class="area-saida">
-            <textarea id="saida" class="textoSaida" name="textoSaida" cols="40" rows = "10"></textarea>
-            <!--  <h2 class="no-msg">Nenhuma mensagem encontrada</h2>
-                <p>Digite um texto que você deseja criptografar ou descriptografar.</p> -->
-            <button class="copiar" value="Copiar" onclick="callCopiar"></button>
-        </section>
+            </section>
+            <section class="area-saida">
+                <textarea id="saida" class="textoSaida" name="textoSaida" cols="40" rows="10"></textarea>
+                <img id="menino" class="menino" src="images/Menino.svg" alt="Menino com lupa">  
+                <input type="button" class="copiar" value="Copiar" onclick="copiarTexto()"></input>
+            </section>
+        </div>
 
         <footer>
 

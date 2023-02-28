@@ -163,7 +163,7 @@ footer {
     display: flex;  
     flex-direction: row;
     justify-content:center;
-    border: 5px solid orange;
+    /* border: 5px solid orange; */
     padding: 20px 0;
     margin: 20px;
     

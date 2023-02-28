@@ -9,7 +9,7 @@
 
 .logo {
     /* display: flex; */
-    width: 300px; 
+    width: 300px;
     height: fit-content;
     position: absolute;
     top: 5%;
@@ -23,6 +23,7 @@ body {
     background-repeat: repeat;
     background-size: cover;
 }
+
 .container {
     display: flex;
     flex-direction: row;
@@ -30,17 +31,18 @@ body {
     height: 850px;
     /* border: 5px solid purple;  */
 }
+
 .texto {
     width: 75%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-     /* border: 5px solid red;  */
+    /* border: 5px solid red;  */
 }
 
 .textoEntrada {
-   position: absolute;
+    position: absolute;
     height: 48px;
     width: 680px;
     left: 240px;
@@ -57,25 +59,27 @@ body {
     color: black;
     outline: none;
 }
+
 p {
     display: flex;
 }
+
 .minusculas {
-      position: absolute; 
-      width: 500px;
-      height: 18px; 
-      margin-top: 700px;
-      margin-left: 150px;
-      font-family: 'Inter';
-      flex-grow: 0; 
-      margin-bottom: 20px;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 18px;
-      color: #FFFFFF;
-      opacity: 0.8;     
-  }
+    position: absolute;
+    width: 500px;
+    height: 18px;
+    margin-top: 700px;
+    margin-left: 150px;
+    font-family: 'Inter';
+    flex-grow: 0;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
 
 .area-saida {
     width: 50%;
@@ -84,7 +88,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: end;
-     /* border: 5px solid blue;  */
+    /* border: 5px solid blue;  */
 }
 
 .textoSaida {
@@ -93,7 +97,7 @@ p {
     width: 400px;
     right: 30px;
     top: 150px;
-    border-radius: 32px; 
+    border-radius: 32px;
     background-repeat: no-repeat;
 }
 
@@ -107,14 +111,14 @@ p {
 
 .copiar {
     position: absolute;
-    background-color: #a9f4639f; 
+    background-color: #a9f4639f;
     /* box-sizing: border-box; */
-    justify-content:center;
+    justify-content: center;
     padding: 10px;
-    width: 200px; 
+    width: 200px;
     height: 67px;
-    border-radius: 28px;   
-    margin-bottom: 40px;    
+    border-radius: 28px;
+    margin-bottom: 40px;
     margin-right: 5px;
     margin-left: 355px;
     color: #000000;
@@ -125,7 +129,7 @@ p {
     padding: 0px;
     gap: 24px;
     margin-bottom: 30px;
-    position: absolute; 
+    position: absolute;
     width: 680px;
     height: 67px;
     left: 100px;
@@ -156,7 +160,17 @@ p {
 }
 
 footer {
-    /* border: 5px solid orange;  */
+    display: flex;  
+    flex-direction: row;
+    justify-content:center;
+    border: 5px solid orange;
     padding: 20px 0;
-    margin: 10px;
+    margin: 20px;
+    
+}
+#faInsta, #faFb, #faGithub, #faLinked {
+    padding: 30px;
+    font-size: 35px;
+    color: #000000;
+
 }
